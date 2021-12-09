@@ -1,0 +1,32 @@
+
+.search-input {
+  border-radius: 0px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-lookup {
+  font-size: 30px;
+  background-color: #00c0cb;
+  padding: 5px 15px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-lookup:hover {
+  background-color: #05a0a8;
+}
+
+.logo {
+  width: 45px;
+}
+
+.nav-text {
+  font-weight: 600;
+}
+
+

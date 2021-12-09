@@ -1,0 +1,13 @@
+.section-title {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 70%;
+  margin: auto;
+}

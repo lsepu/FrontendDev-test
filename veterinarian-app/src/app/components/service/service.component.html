@@ -1,0 +1,43 @@
+<section class="textVideo">
+  <div
+    class="
+      container
+      d-lg-flex
+      align-items-center
+      justify-content-center
+      textVideo-container
+    "
+    [ngStyle]="{'flex-direction': reverse ? 'row-reverse' : 'row'}"
+  >
+    <!--Text-->
+    <div class="mx-auto textVideo-text">
+      <h1 class="textVideo-title">{{ service.title }}</h1>
+      <p class="textVideo-paragraph">
+        {{ service.paragraph }}
+      </p>
+      <div class="textVideo-btns">
+        <button
+          type="button"
+          style="color: white"
+          class="btn btn-warning btn-lg"
+        >
+          Our Service
+        </button>
+      </div>
+    </div>
+
+    <!--Video-->
+    <div style="text-align: center" class="video">
+      <iframe
+        width="400"
+        height="315"
+        src="https://www.youtube.com/embed/_QWswkwC-R4"
+        modestbranding="1"
+        controls="0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>

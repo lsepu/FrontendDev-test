@@ -1,0 +1,56 @@
+/*textvideo utilities*/
+.textVideo {
+  height: 100vh;
+}
+
+.textVideo-container {
+  height: 100%;
+  max-width: 1120px;
+}
+
+.textVideo-text {
+  max-width: 550px;
+  color: black;
+}
+
+.textVideo-title {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.textVideo-paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .textVideo {
+    height: 100%;
+  }
+
+  .textVideo-title {
+    font-size: 3rem;
+  }
+  .textVideo-text {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .textVideo-btns {
+    text-align: center;
+  }
+
+  .textVideo-title {
+    padding-top: 2rem;
+  }
+
+  .video {
+    padding: 3rem 0;
+  }
+
+  .textVideo{
+    margin-bottom: 6rem;
+  }
+}

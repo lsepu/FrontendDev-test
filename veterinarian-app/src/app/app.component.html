@@ -1,0 +1,105 @@
+<app-navbar></app-navbar>
+
+<app-hero></app-hero>
+
+<app-service [service]="service"></app-service>
+
+<section class="card-section">
+  <div class="d-flex justify-content-center flex-column m-auto card-container">
+    <app-section-info [section]="sectionInfo[0]"></app-section-info>
+    <div class="d-lg-flex justify-content-between pt-5">
+      <div class="card-wrapper" *ngFor="let card of dogCard">
+        <img class="card-img" src="{{ card.url }}" alt="" />
+        <div class="dog-card">
+          <h2>{{ card.title }}</h2>
+          <p>{{ card.paragraph }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-service [service]="service" [reverse]="true"></app-service>
+
+<section class="card-section">
+  <div class="d-flex justify-content-center flex-column m-auto card-container">
+    <app-section-info [section]="sectionInfo[0]"></app-section-info>
+    <div class="d-lg-flex justify-content-between pt-5">
+      <div class="card-wrapper" *ngFor="let card of dogCard2">
+        <img class="card-img" src="{{ card.url }}" alt="" />
+        <div class="dog-card">
+          <div class="d-md-flex justify-content-center">
+            <span class="card-oldPrice">{{ "$" + card.oldPrice }}</span>
+            <span>{{ "$" + card.newPrice }}</span>
+          </div>
+          <button class="btn btn-primary fs-5 rounded-pill">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card-section card--white">
+  <div class="d-flex justify-content-center flex-column m-auto card-container">
+    <app-section-info [section]="sectionInfo[1]"></app-section-info>
+    <div class="d-lg-flex justify-content-between pt-5">
+      <div class="card-wrapper" *ngFor="let card of veterinaryCard">
+        <img class="card-img" src="{{ card.url }}" alt="" />
+        <div class="dog-card" style="color: black">
+          <h2>{{ card.name }}</h2>
+          <p style="text-transform: uppercase">{{ card.jobTitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card-section card--bg">
+  <div
+    class="d-flex justify-content-center flex-column m-auto card-container"
+    style="padding: 5rem 0"
+  >
+    <div class="d-lg-flex justify-content-between pt-5">
+      <div
+        class="card-wrapper d-flex flex-column align-items-center"
+        style="padding: 1.2rem 0"
+        *ngFor="let stat of statistics"
+      >
+        <img class="card-icon" src="{{ stat.url }}" alt="" />
+        <span class="fs-2" style="font-weight: 600">{{
+          "+" + stat.number
+        }}</span>
+        <span style="padding-top: 0.5rem; font-weight: bold" class="fs-1">{{
+          stat.phrase
+        }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card-section card--white">
+  <div class="d-flex justify-content-center flex-column m-auto card-container">
+    <app-section-info [section]="sectionInfo[2]"></app-section-info>
+    <div class="d-lg-flex justify-content-between pt-5">
+      <div class="card-wrapper" *ngFor="let card of veterinaryCard2">
+        <div class="card" style="color: black">
+          <img class="card-img" src="{{ card.url }}" alt="" />
+          <div class="card-body" style="text-align: left; margin: 0.5rem">
+            <h3 class="card-title" style="font-weight: bold">
+              {{ card.title }}
+            </h3>
+            <p class="card-text card-date">
+              {{ card.date }}
+            </p>
+            <p class="card-text">
+              {{ card.paragraph }}
+            </p>
+            <a href="#" class="card-link card-readmore">Read More +</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

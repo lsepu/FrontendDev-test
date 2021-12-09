@@ -1,0 +1,40 @@
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="row item-container">
+    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto py-3 text-md-start text-center">
+      <h2 class="mb-4 fw-bold">About</h2>
+      <p *ngFor="let item of about">
+        <a
+          href=""
+          class="item-text"
+          >{{item}}</a
+        >
+      </p>
+    </div>
+
+    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto text-md-start text-center  py-3">
+      <h2 class="mb-4 fw-bold">Services</h2>
+      <p *ngFor="let item of services">
+        <a
+          href=""
+          class="item-text"
+          >{{item}}</a
+        >
+      </p>
+    </div>
+
+    <div class="col-md-4 col-lg-4 col-xl-4 text-md-end text-center mx-auto py-3">
+      <h2 class="mb-4 fw-bold">Title Here</h2>
+      <p style="font-size: 1.2rem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <form class="d-flex pt-3" style="height: 70px;">
+        <input
+          class="form-control send-input"
+          type="send"
+          aria-label="send"
+        />
+        <span class="material-icons send-icon d-flex align-items-center"> send </span>
+      </form>
+    </div>
+  </div>
+</footer>

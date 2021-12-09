@@ -1,0 +1,34 @@
+.send-input {
+  border-radius: 0px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.send-input:focus {
+  outline: none;
+}
+
+.send-icon {
+  font-size: 30px;
+  background-color: #00c0cb;
+  padding: 5px 15px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item-container {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.item-text {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-form {
+    text-align: center;
+  }
+}

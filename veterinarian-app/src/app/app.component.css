@@ -1,0 +1,84 @@
+.card-section {
+  height: 100%;
+  background-color: #fec400;
+  padding: 3rem 0;
+}
+
+.card-date {
+  font-size: 1.2rem;
+  color: #00c0cb;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-readmore {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00c0cb;
+}
+
+.card-container {
+  height: 100%;
+  max-width: 1120px;
+  text-align: center;
+}
+
+.card-img {
+  min-width: 350px;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.card-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.card-wrapper {
+  margin: 10px;
+  color: white;
+}
+
+.dog-card {
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.dog-card > h2 {
+  font-weight: bold;
+}
+
+.dog-card > p {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.dog-card span {
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.card-oldPrice {
+  text-decoration: line-through;
+  text-decoration-thickness: 5px;
+  text-decoration-color: white;
+  color: rgba(255, 255, 255, 0.712);
+}
+
+/*utils*/
+
+.card--white {
+  background-color: white;
+}
+
+.card--bg {
+  background: #fec400 url("../assets/bg2.jpg") no-repeat fixed center;
+}
+
+@media screen and (max-width: 768px) {
+  .dog-card {
+    max-width: 70%;
+  }
+}
